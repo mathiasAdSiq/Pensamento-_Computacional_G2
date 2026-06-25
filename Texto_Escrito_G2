@@ -48,12 +48,19 @@ A ideia Inicial era criar uma Caixa Inútil (Useless Box)
 Construir uma Useless Box: uma caixa com um interruptor (botão) que, ao ser ligado, aciona um servo motor controlado por um Arduino para desligar o próprio interruptor automaticamente. O projeto vai além do conceito clássico ao incluir uma lógica de “personalidade” no movimento do braço (hesitação, simulação de desistência, repetição de movimentos e aumento progressivo de “irritação” conforme o botão é acionado repetidamente).
 
 Como essa ideia surgiu?
+
 A ideia surgiu a partir de vídeos e projetos publicados no Instructables, onde esse tipo de caixa é um projeto clássico de eletrônica e programação. Achei o conceito divertido: um dispositivo cuja única função é reagir a uma ação do usuário desfazendo-a.
+
 Por que a dupla escolheu essa proposta?
+
 Porque é um projeto que permite aplicar, de forma simples e visível, conceitos de lógica condicional, controle de hardware (servo motor e botão) e estados de programa, além de abrir espaço para criatividade na criação de comportamentos diferentes para o sistema.
+
 Qual situação, problema ou necessidade será trabalhada?
+
 Não há um problema prático do cotidiano a ser resolvido; a proposta representa, de forma lúdica, o funcionamento de um sistema automatizado que recebe um estímulo (acionamento do botão) e responde com uma sequência de ações planejadas.
+
 O que a dupla pretende criar ao final?
+
 Um protótipo funcional com Arduino, servo motor e botão, montado em protoboard, com um código capaz de detectar o acionamento do botão e mover o braço do servo executando diferentes sequências de movimento (“comportamentos”), sempre retornando ao estado de “desligado”.
 
 
@@ -66,11 +73,14 @@ A dupla deverá responder:
 3.	Por que essa solução faria sentido?
 4.	O que aconteceria se essa solução fosse aplicada na prática?
 Descrição do problema ou necessidade:
+
 A Caixa Inútil não foi criada para resolver um problema real do dia a dia, mas sim para representar de forma divertida e educativa o funcionamento de sistemas automatizados. A necessidade trabalhada é demonstrar como sensores, mecanismos e algoritmos podem interagir para executar ações automáticas.
+
 O que precisa ser resolvido, melhorado ou representado?
 Representa o funcionamento de um sistema automatizado que reage a uma ação do usuário: ao ligar o interruptor, o sistema identifica essa mudança de estado e aciona um mecanismo (servo motor) para revertê-la, sem necessidade de intervenção humana adicional.
 Quem poderia utilizar ou se beneficiar dessa solução?
 Estudantes e curiosos de eletrônica e programação, como demonstração didática de conceitos de automação, lógica de programação e controle de atuadores; também serve como objeto de entretenimento.
+
 Por que essa solução faria sentido?
 Porque condensa, em um projeto pequeno e visível, conceitos centrais de pensamento computacional: leitura de sensores, tomada de decisão, repetição de ações e controle de estado — todos facilmente observáveis pelo movimento do servo.
 O que aconteceria se essa solução fosse aplicada na prática?
@@ -86,6 +96,7 @@ A dupla deverá responder:
 5.	Qual será o resultado esperado?
 Funcionamento da solução:
 O que a solução deverá fazer?
+
 Detectar quando o botão (interruptor) é ligado e mover o servo motor do braço até a posição de desligar o botão, passando por etapas intermediárias de movimento que criam a sensação de “personalidade” (hesitação, irritação crescente, desistência simulada, abertura repetida da tampa e a ação de fingir que desligou).
 Quais informações serão necessárias para ela funcionar?
 O estado atual do botão (ligado ou desligado), a posição atual do servo, e um contador de quantas vezes o botão foi acionado recentemente (usado para calcular o nível de “irritação” do sistema).
@@ -96,11 +107,13 @@ Quais ações deverão acontecer?
 •       Tentativa de desistência (avançar um pouco e recuar) em parte das execuções.
 •       Movimento final até a posição de desligado.
 •       Verificação contínua do botão durante todo o processo, interrompendo a sequência imediatamente caso o botão seja solto antes do fim.
+
 Quais decisões a solução precisará tomar?
 •       Se o botão está ligado ou desligado, para decidir a direção do movimento.
 •       Qual comportamento sortear quando o botão é ligado.
 •       Se deve ou não simular uma tentativa de desistência, com base no nível de irritação atual.
 •       Se deve interromper o movimento em andamento, caso detecte que o botão foi solto.
+
 Qual será o resultado esperado?
 Um protótipo em que, a cada vez que o interruptor é ligado, o braço do servo executa uma sequência diferente e imprevisível de movimentos antes de finalmente desligá-lo, retornando ao estado de repouso (90°) quando o interruptor estiver desligado.
 
@@ -108,6 +121,7 @@ Um protótipo em que, a cada vez que o interruptor é ligado, o braço do servo 
 A decomposição consiste em dividir uma ideia maior em partes menores, facilitando o planejamento e a construção.
 A dupla deverá dividir a solução em etapas menores.
 Partes da solução:
+
 1.    Leitura do sensor (botão): ler o estado do pino digital e tratar a inversão de lógica causada pela fiação com resistor pull-down.
 2.    Controle do atuador (servo): mover o servo passo a passo entre as posições mínima (20°) e máxima (90°) definidas no projeto.
 3.    Módulo de movimento intermediário: deslocar o braço até a posição do meio do percurso (55°) e pausar.
@@ -132,8 +146,11 @@ A dupla deverá responder:
 2.	O que pode ficar de fora nesta primeira versão?
 3.	Quais elementos precisam aparecer na simulação?
 4.	Quais detalhes podem ser melhorados apenas depois?
+
 Elementos essenciais da solução:
+
 O que a solução deverá fazer?
+
 Detectar quando o botão (interruptor) é ligado e mover o servo motor do braço até a posição de desligar o botão, passando por etapas intermediárias de movimento que criam a sensação de “personalidade” (hesitação, irritação crescente, desistência simulada, abertura repetida da tampa e a ação de fingir que desligou).
 Quais informações serão necessárias para ela funcionar?
 O estado atual do botão (ligado ou desligado), a posição atual do servo, e um contador de quantas vezes o botão foi acionado recentemente (usado para calcular o nível de “irritação” do sistema).
@@ -144,6 +161,7 @@ Quais ações deverão acontecer?
 •       Tentativa de desistência (avançar um pouco e recuar) em parte das execuções.
 •       Movimento final até a posição de desligado.
 •       Verificação contínua do botão durante todo o processo, interrompendo a sequência imediatamente caso o botão seja solto antes do fim.
+
 Quais decisões a solução precisará tomar?
 •       Se o botão está ligado ou desligado, para decidir a direção do movimento.
 •       Qual comportamento sortear quando o botão é ligado.
@@ -159,8 +177,10 @@ O algoritmo deve mostrar, de forma organizada, o que acontece primeiro, depois e
 Algoritmo da solução:
 1.	O que a solução deverá fazer?
 2.	Detectar quando o botão (interruptor) é ligado e mover o servo motor do braço até a posição de desligar o botão, passando por etapas intermediárias de movimento que criam a sensação de “personalidade” (hesitação, irritação crescente, desistência simulada, abertura repetida da tampa e a ação de fingir que desligou).
+
 3.	Quais informações serão necessárias para ela funcionar?
 4.	O estado atual do botão (ligado ou desligado), a posição atual do servo, e um contador de quantas vezes o botão foi acionado recentemente (usado para calcular o nível de “irritação” do sistema).
+
 5.	Quais ações deverão acontecer?
 6.	•       Leitura contínua do estado do botão.
 7.	•       Movimento do servo até a metade do caminho, com pausa de “hesitação”.
@@ -168,11 +188,13 @@ Algoritmo da solução:
 9.	•       Tentativa de desistência (avançar um pouco e recuar) em parte das execuções.
 10.	•       Movimento final até a posição de desligado.
 11.	•       Verificação contínua do botão durante todo o processo, interrompendo a sequência imediatamente caso o botão seja solto antes do fim.
+
 12.	Quais decisões a solução precisará tomar?
 13.	•       Se o botão está ligado ou desligado, para decidir a direção do movimento.
 14.	•       Qual comportamento sortear quando o botão é ligado.
 15.	•       Se deve ou não simular uma tentativa de desistência, com base no nível de irritação atual.
 16.	•       Se deve interromper o movimento em andamento, caso detecte que o botão foi solto.
+
 17.	Qual será o resultado esperado?
 18.	Um protótipo em que, a cada vez que o interruptor é ligado, o braço do servo executa uma sequência diferente e imprevisível de movimentos antes de finalmente desligá-lo, retornando ao estado de repouso (90°) quando o interruptor estiver desligado.
 
@@ -194,7 +216,9 @@ A dupla deverá responder:
 4.	O que pode ser melhorado?
 5.	A ideia inicial precisou ser modificada?
 Registro dos testes e melhorias:
+
 A simulação funcionou como esperado?
+
 Parcialmente, após ajustes. Na primeira versão, o braço continuava se movendo mesmo depois do botão ser solto, e percebeu-se também que a leitura do botão estava invertida em relação ao esperado.
 O que deu certo?
 As variações de personalidade (hesitação, tremor, abrir/fechar repetido, fingir desligamento, desistência simulada) funcionaram corretamente dentro dos limites de posição já definidos (20° a 90°).
@@ -242,4 +266,5 @@ Ao final do trabalho, a dupla deverá escrever uma conclusão respondendo:
 3.	A solução criada funcionou como esperado?
 4.	O que poderia ser melhorado em uma próxima versão?
 Conclusão:
+
 Durante o desenvolvimento deste trabalho, ficou claro como o pensamento computacional ajuda a transformar uma ideia simples — uma caixa que desliga um botão sozinha — em um sistema com lógica robusta. A decomposição do problema em módulos (leitura do botão, controle do servo, variação de comportamento, verificação contínua) tornou possível adicionar funcionalidades novas sem reescrever tudo do zero a cada etapa. O reconhecimento de padrões permitiu identificar que várias partes do código repetiam a mesma lógica de “mover e verificar o botão”, o que levou à criação de funções reutilizáveis e a um código mais organizado. A solução funcionou como esperado depois de identificar e corrigir dois problemas reais durante os testes: a leitura contínua do botão (para que o servo não continuasse se movendo após o botão ser solto) e a inversão de lógica causada pela fiação do resistor pull-down. Em uma próxima versão, seria interessante montar a caixa física definitiva e talvez adicionar sons, além de tornar o código não-bloqueante para um controle ainda mais preciso do comportamento do servo.
