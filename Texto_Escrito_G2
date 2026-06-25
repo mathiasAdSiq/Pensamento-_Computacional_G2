@@ -1,0 +1,245 @@
+Trabalho Avaliativo – G2
+Disciplina: Pensamento Computacional
+Professor: Leonam Vieira Hemann
+Turma: SIS1
+Data de início: 02/06/2026
+Data de entrega: 25/06/ 2026
+Valor: G2
+Modalidade: Trabalho em dupla
+________________________________________
+1. Apresentação da atividade
+Neste trabalho, os estudantes deverão desenvolver uma proposta própria, ou seguir alguma ideia (https://www.instructables.com/) , pela dupla, utilizando os conceitos estudados na disciplina de Pensamento Computacional.
+A atividade consiste em pensar em uma situação, problema ou necessidade, organizar uma solução em etapas, criar uma lógica de funcionamento e iniciar a construção de uma simulação e protótipo.
+A ideia do trabalho não será fornecida pelo professor. Cada dupla deverá elaborar sua própria proposta, justificando por que escolheu o tema e como pretende desenvolver a solução.
+________________________________________
+2. Objetivo geral
+Criar, planejar e desenvolver uma solução própria utilizando os princípios do pensamento computacional, demonstrando organização lógica, criatividade e capacidade de transformar uma ideia em uma simulação ou protótipo.
+________________________________________
+3. Objetivos específicos
+●	Criar uma ideia em dupla;
+●	Identificar uma situação, problema ou necessidade a ser trabalhada;
+●	Organizar a ideia em etapas;
+●	Aplicar decomposição, reconhecimento de padrões, abstração e algoritmo;
+●	Planejar o funcionamento da solução;
+●	Iniciar a construção de uma simulação e protótipo;
+●	Testar, revisar e melhorar a proposta;
+●	Apresentar o processo de criação e o resultado final.
+________________________________________
+4. Organização do trabalho
+O trabalho deverá ser realizado em duplas.
+Cada dupla deverá discutir, escolher e desenvolver uma ideia própria. A proposta deve ser construída pelos integrantes, sem copiar modelos prontos.
+Integrante	Responsabilidade no trabalho
+Aluno(a) 1	Mathias Almeida de Siqueira
+Aluno(a) 2	___________________________________
+As responsabilidades poderão ser divididas entre: escrita, organização da ideia, criação da lógica, construção da simulação, testes e apresentação.
+________________________________________
+5. Primeira etapa: criação da ideia
+Nesta etapa, a dupla deverá conversar e definir qual será a proposta do trabalho.
+A ideia pode surgir a partir de uma situação observada na faculdade, em casa, na comunidade, em jogos, em aplicativos, em sistemas do dia a dia ou em algum problema que a dupla gostaria de resolver.
+A dupla deverá responder:
+1.	Qual será a ideia principal do trabalho?
+2.	Como essa ideia surgiu?
+3.	Por que a dupla escolheu essa proposta?
+4.	Qual situação, problema ou necessidade será trabalhada?
+5.	O que a dupla pretende criar ao final?
+Descrição da ideia inicial:
+A ideia Inicial era criar uma Caixa Inútil (Useless Box) 
+
+Construir uma Useless Box: uma caixa com um interruptor (botão) que, ao ser ligado, aciona um servo motor controlado por um Arduino para desligar o próprio interruptor automaticamente. O projeto vai além do conceito clássico ao incluir uma lógica de “personalidade” no movimento do braço (hesitação, simulação de desistência, repetição de movimentos e aumento progressivo de “irritação” conforme o botão é acionado repetidamente).
+
+Como essa ideia surgiu?
+A ideia surgiu a partir de vídeos e projetos publicados no Instructables, onde esse tipo de caixa é um projeto clássico de eletrônica e programação. Achei o conceito divertido: um dispositivo cuja única função é reagir a uma ação do usuário desfazendo-a.
+Por que a dupla escolheu essa proposta?
+Porque é um projeto que permite aplicar, de forma simples e visível, conceitos de lógica condicional, controle de hardware (servo motor e botão) e estados de programa, além de abrir espaço para criatividade na criação de comportamentos diferentes para o sistema.
+Qual situação, problema ou necessidade será trabalhada?
+Não há um problema prático do cotidiano a ser resolvido; a proposta representa, de forma lúdica, o funcionamento de um sistema automatizado que recebe um estímulo (acionamento do botão) e responde com uma sequência de ações planejadas.
+O que a dupla pretende criar ao final?
+Um protótipo funcional com Arduino, servo motor e botão, montado em protoboard, com um código capaz de detectar o acionamento do botão e mover o braço do servo executando diferentes sequências de movimento (“comportamentos”), sempre retornando ao estado de “desligado”.
+
+
+
+6. Segunda etapa: definição do problema ou necessidade
+Depois de escolher a ideia, a dupla deverá explicar melhor qual problema, necessidade ou situação será abordada.
+A dupla deverá responder:
+1.	O que precisa ser resolvido, melhorado ou representado?
+2.	Quem poderia utilizar ou se beneficiar dessa solução?
+3.	Por que essa solução faria sentido?
+4.	O que aconteceria se essa solução fosse aplicada na prática?
+Descrição do problema ou necessidade:
+A Caixa Inútil não foi criada para resolver um problema real do dia a dia, mas sim para representar de forma divertida e educativa o funcionamento de sistemas automatizados. A necessidade trabalhada é demonstrar como sensores, mecanismos e algoritmos podem interagir para executar ações automáticas.
+O que precisa ser resolvido, melhorado ou representado?
+Representa o funcionamento de um sistema automatizado que reage a uma ação do usuário: ao ligar o interruptor, o sistema identifica essa mudança de estado e aciona um mecanismo (servo motor) para revertê-la, sem necessidade de intervenção humana adicional.
+Quem poderia utilizar ou se beneficiar dessa solução?
+Estudantes e curiosos de eletrônica e programação, como demonstração didática de conceitos de automação, lógica de programação e controle de atuadores; também serve como objeto de entretenimento.
+Por que essa solução faria sentido?
+Porque condensa, em um projeto pequeno e visível, conceitos centrais de pensamento computacional: leitura de sensores, tomada de decisão, repetição de ações e controle de estado — todos facilmente observáveis pelo movimento do servo.
+O que aconteceria se essa solução fosse aplicada na prática?
+O usuário liga o interruptor da caixa e observa o braço mecânico reagir de formas variadas — hesitando, fingindo desistir, abrindo e fechando repetidamente — antes de finalmente desligar o interruptor, criando uma experiência interativa e imprevisível a cada acionamento.
+
+7. Terceira etapa: planejamento da solução
+Nesta etapa, a dupla deverá explicar como a solução funcionará.
+A dupla deverá responder:
+1.	O que a solução deverá fazer?
+2.	Quais informações serão necessárias para ela funcionar?
+3.	Quais ações deverão acontecer?
+4.	Quais decisões a solução precisará tomar?
+5.	Qual será o resultado esperado?
+Funcionamento da solução:
+O que a solução deverá fazer?
+Detectar quando o botão (interruptor) é ligado e mover o servo motor do braço até a posição de desligar o botão, passando por etapas intermediárias de movimento que criam a sensação de “personalidade” (hesitação, irritação crescente, desistência simulada, abertura repetida da tampa e a ação de fingir que desligou).
+Quais informações serão necessárias para ela funcionar?
+O estado atual do botão (ligado ou desligado), a posição atual do servo, e um contador de quantas vezes o botão foi acionado recentemente (usado para calcular o nível de “irritação” do sistema).
+Quais ações deverão acontecer?
+•       Leitura contínua do estado do botão.
+•       Movimento do servo até a metade do caminho, com pausa de “hesitação”.
+•       Sorteio aleatório de um comportamento extra (abrir/fechar repetidamente entre 3 e 9 vezes, ou fingir que desligou e voltar rapidamente).
+•       Tentativa de desistência (avançar um pouco e recuar) em parte das execuções.
+•       Movimento final até a posição de desligado.
+•       Verificação contínua do botão durante todo o processo, interrompendo a sequência imediatamente caso o botão seja solto antes do fim.
+Quais decisões a solução precisará tomar?
+•       Se o botão está ligado ou desligado, para decidir a direção do movimento.
+•       Qual comportamento sortear quando o botão é ligado.
+•       Se deve ou não simular uma tentativa de desistência, com base no nível de irritação atual.
+•       Se deve interromper o movimento em andamento, caso detecte que o botão foi solto.
+Qual será o resultado esperado?
+Um protótipo em que, a cada vez que o interruptor é ligado, o braço do servo executa uma sequência diferente e imprevisível de movimentos antes de finalmente desligá-lo, retornando ao estado de repouso (90°) quando o interruptor estiver desligado.
+
+8. Quarta etapa: decomposição
+A decomposição consiste em dividir uma ideia maior em partes menores, facilitando o planejamento e a construção.
+A dupla deverá dividir a solução em etapas menores.
+Partes da solução:
+1.    Leitura do sensor (botão): ler o estado do pino digital e tratar a inversão de lógica causada pela fiação com resistor pull-down.
+2.    Controle do atuador (servo): mover o servo passo a passo entre as posições mínima (20°) e máxima (90°) definidas no projeto.
+3.    Módulo de movimento intermediário: deslocar o braço até a posição do meio do percurso (55°) e pausar.
+4.    Módulo de variação de comportamento: sortear entre diferentes sequências (tremor, abrir/fechar repetido, fingir desligamento, tentativa de desistência).
+5.    Módulo de irritação progressiva: contar quantas vezes o botão foi pressionado e ajustar velocidade, paciência e amplitude dos movimentos.
+6.    Módulo de segurança/interrupção: verificar continuamente se o botão ainda está pressionado, abortando a sequência atual e indo direto para a posição de desligado se o botão for solto.
+7.    Retorno ao repouso: mover o servo de volta à posição de 90° quando o botão estiver desligado.
+
+9. Quinta etapa: reconhecimento de padrões
+Nesta etapa, a dupla deverá observar se existem ações que se repetem ou situações parecidas dentro da solução planejada.
+A dupla deverá responder:
+1.	Existem ações repetidas?
+2.	Existem etapas que seguem uma sequência?
+3.	Existem situações semelhantes que podem usar a mesma lógica?
+4.	Alguma parte da solução pode ser reaproveitada?
+Padrões encontrados:
+________________________________________________________________________________________________________________________
+10. Sexta etapa: abstração
+A abstração consiste em identificar o que é essencial para a solução funcionar, retirando detalhes que não são necessários no primeiro momento.
+A dupla deverá responder:
+1.	O que é indispensável para a solução funcionar?
+2.	O que pode ficar de fora nesta primeira versão?
+3.	Quais elementos precisam aparecer na simulação?
+4.	Quais detalhes podem ser melhorados apenas depois?
+Elementos essenciais da solução:
+O que a solução deverá fazer?
+Detectar quando o botão (interruptor) é ligado e mover o servo motor do braço até a posição de desligar o botão, passando por etapas intermediárias de movimento que criam a sensação de “personalidade” (hesitação, irritação crescente, desistência simulada, abertura repetida da tampa e a ação de fingir que desligou).
+Quais informações serão necessárias para ela funcionar?
+O estado atual do botão (ligado ou desligado), a posição atual do servo, e um contador de quantas vezes o botão foi acionado recentemente (usado para calcular o nível de “irritação” do sistema).
+Quais ações deverão acontecer?
+•       Leitura contínua do estado do botão.
+•       Movimento do servo até a metade do caminho, com pausa de “hesitação”.
+•       Sorteio aleatório de um comportamento extra (abrir/fechar repetidamente entre 3 e 9 vezes, ou fingir que desligou e voltar rapidamente).
+•       Tentativa de desistência (avançar um pouco e recuar) em parte das execuções.
+•       Movimento final até a posição de desligado.
+•       Verificação contínua do botão durante todo o processo, interrompendo a sequência imediatamente caso o botão seja solto antes do fim.
+Quais decisões a solução precisará tomar?
+•       Se o botão está ligado ou desligado, para decidir a direção do movimento.
+•       Qual comportamento sortear quando o botão é ligado.
+•       Se deve ou não simular uma tentativa de desistência, com base no nível de irritação atual.
+•       Se deve interromper o movimento em andamento, caso detecte que o botão foi solto.
+Qual será o resultado esperado?
+Um protótipo em que, a cada vez que o interruptor é ligado, o braço do servo executa uma sequência diferente e imprevisível de movimentos antes de finalmente desligá-lo, retornando ao estado de repouso (90°) quando o interruptor estiver desligado.
+
+
+11. Sétima etapa: algoritmo
+A dupla deverá criar uma sequência lógica de passos para representar o funcionamento da solução.
+O algoritmo deve mostrar, de forma organizada, o que acontece primeiro, depois e ao final.
+Algoritmo da solução:
+1.	O que a solução deverá fazer?
+2.	Detectar quando o botão (interruptor) é ligado e mover o servo motor do braço até a posição de desligar o botão, passando por etapas intermediárias de movimento que criam a sensação de “personalidade” (hesitação, irritação crescente, desistência simulada, abertura repetida da tampa e a ação de fingir que desligou).
+3.	Quais informações serão necessárias para ela funcionar?
+4.	O estado atual do botão (ligado ou desligado), a posição atual do servo, e um contador de quantas vezes o botão foi acionado recentemente (usado para calcular o nível de “irritação” do sistema).
+5.	Quais ações deverão acontecer?
+6.	•       Leitura contínua do estado do botão.
+7.	•       Movimento do servo até a metade do caminho, com pausa de “hesitação”.
+8.	•       Sorteio aleatório de um comportamento extra (abrir/fechar repetidamente entre 3 e 9 vezes, ou fingir que desligou e voltar rapidamente).
+9.	•       Tentativa de desistência (avançar um pouco e recuar) em parte das execuções.
+10.	•       Movimento final até a posição de desligado.
+11.	•       Verificação contínua do botão durante todo o processo, interrompendo a sequência imediatamente caso o botão seja solto antes do fim.
+12.	Quais decisões a solução precisará tomar?
+13.	•       Se o botão está ligado ou desligado, para decidir a direção do movimento.
+14.	•       Qual comportamento sortear quando o botão é ligado.
+15.	•       Se deve ou não simular uma tentativa de desistência, com base no nível de irritação atual.
+16.	•       Se deve interromper o movimento em andamento, caso detecte que o botão foi solto.
+17.	Qual será o resultado esperado?
+18.	Um protótipo em que, a cada vez que o interruptor é ligado, o braço do servo executa uma sequência diferente e imprevisível de movimentos antes de finalmente desligá-lo, retornando ao estado de repouso (90°) quando o interruptor estiver desligado.
+
+12. Oitava etapa: simulação e protótipo
+A dupla deverá iniciar a construção de uma simulação ou protótipo da solução planejada.
+A simulação deve representar o funcionamento principal da ideia. Não é necessário que esteja completa no primeiro momento, mas ela precisa demonstrar a lógica pensada pela dupla.
+O que será simulado:
+O comportamento completo da Useless Box: a leitura do botão, o movimento do servo em suas diferentes “personalidades” (hesitação, irritação progressiva, desistência simulada, abertura repetida e o efeito de fingir desligamento), e o retorno ao estado de repouso.
+
+O que a dupla conseguiu iniciar hoje:
+O código completo em C++ (Arduino) foi escrito e testado em um protótipo montado em protoboard, com botão (resistor pull-down) e servo motor conectados ao Arduino. Todas as variações de comportamento foram implementadas e a lógica de verificação contínua do botão foi adicionada para garantir que o servo só se mova enquanto o botão estiver realmente pressionado.
+
+13. Nona etapa: testes e melhorias
+Após iniciar a simulação, a dupla deverá testar o funcionamento e verificar se a lógica faz sentido.
+A dupla deverá responder:
+1.	A simulação funcionou como esperado?
+2.	O que deu certo?
+3.	O que precisa ser corrigido?
+4.	O que pode ser melhorado?
+5.	A ideia inicial precisou ser modificada?
+Registro dos testes e melhorias:
+A simulação funcionou como esperado?
+Parcialmente, após ajustes. Na primeira versão, o braço continuava se movendo mesmo depois do botão ser solto, e percebeu-se também que a leitura do botão estava invertida em relação ao esperado.
+O que deu certo?
+As variações de personalidade (hesitação, tremor, abrir/fechar repetido, fingir desligamento, desistência simulada) funcionaram corretamente dentro dos limites de posição já definidos (20° a 90°).
+O que precisou ser corrigido?
+•       O código original só lia o estado do botão uma vez no início de cada ciclo do loop, o que fazia o servo continuar executando toda a sequência mesmo depois do botão ser solto. Foi necessário criar funções que verificam o botão continuamente durante os movimentos e interrompem a sequência imediatamente quando ele é solto.
+•       Foi identificado que a fiação com resistor pull-down estava produzindo uma leitura invertida (1 quando deveria ser 0, e vice-versa). A correção foi feita no código, centralizando a inversão em uma única função de leitura do botão, para facilitar ajustes futuros.
+O que pode ser melhorado?
+Adicionar um buzzer para reforçar sonoramente os momentos de “desistência” ou irritação, montar a caixa física definitiva, e considerar migrar de delay() para millis() em uma versão futura para tornar o código não-bloqueante de forma mais robusta.
+A ideia inicial precisou ser modificada?
+A ideia central (Useless Box) não mudou, mas foi enriquecida: em vez de um movimento único e previsível de ligar/desligar, o projeto evoluiu para incluir múltiplos comportamentos sorteados e um sistema de “irritação” que torna cada interação diferente da anterior.
+
+14. Entrega final
+A dupla deverá entregar:
+1.	Documento preenchido com todas as etapas do trabalho;
+2.	Algoritmo da solução;
+3.	Simulação e protótipo iniciado ou finalizado;
+4.	Apresentação breve explicando a ideia e o processo de criação.
+________________________________________
+15. Apresentação
+Na apresentação, a dupla deverá explicar:
+●	Como surgiu a ideia;
+●	Qual problema ou necessidade foi escolhido;
+●	Como a solução foi planejada;
+●	Como o pensamento computacional foi utilizado;
+●	Como funciona a simulação;
+●	Quais dificuldades apareceram;
+●	O que poderia ser melhorado.
+________________________________________
+16. Critérios de avaliação
+Critério	Valor
+Criação e justificativa da ideia	1,5
+Clareza na definição do problema ou necessidade	1,5
+Organização da solução em etapas	1,5
+Aplicação dos conceitos de pensamento computacional	2,0
+Algoritmo ou sequência lógica	1,5
+Simulação e protótipo	1,5
+Participação da dupla e apresentação	1,0
+Total	10,0
+
+________________________________________
+17. Conclusão final da dupla
+Ao final do trabalho, a dupla deverá escrever uma conclusão respondendo:
+1.	O que a dupla aprendeu durante o desenvolvimento?
+2.	Como o pensamento computacional ajudou na organização da ideia?
+3.	A solução criada funcionou como esperado?
+4.	O que poderia ser melhorado em uma próxima versão?
+Conclusão:
+Durante o desenvolvimento deste trabalho, ficou claro como o pensamento computacional ajuda a transformar uma ideia simples — uma caixa que desliga um botão sozinha — em um sistema com lógica robusta. A decomposição do problema em módulos (leitura do botão, controle do servo, variação de comportamento, verificação contínua) tornou possível adicionar funcionalidades novas sem reescrever tudo do zero a cada etapa. O reconhecimento de padrões permitiu identificar que várias partes do código repetiam a mesma lógica de “mover e verificar o botão”, o que levou à criação de funções reutilizáveis e a um código mais organizado. A solução funcionou como esperado depois de identificar e corrigir dois problemas reais durante os testes: a leitura contínua do botão (para que o servo não continuasse se movendo após o botão ser solto) e a inversão de lógica causada pela fiação do resistor pull-down. Em uma próxima versão, seria interessante montar a caixa física definitiva e talvez adicionar sons, além de tornar o código não-bloqueante para um controle ainda mais preciso do comportamento do servo.
